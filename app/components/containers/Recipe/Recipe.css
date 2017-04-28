@@ -1,0 +1,12 @@
+.recipe {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-style: solid;
+  border-color: gray;
+  border-width: 3px;
+  left: 0;
+  width: 20%;
+  height: inherit;
+  overflow-y: scroll;
+}

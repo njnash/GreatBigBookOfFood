@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './components/pages';
+import { Home } from './components/pages';
 
 ReactDOM.render(
-  <App />,
+  <Home />,
   document.body.appendChild(document.createElement('div'))
 );

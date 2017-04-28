@@ -1,0 +1,15 @@
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: medium;
+   padding: 5px;
+   width: 80%;
+   border-radius: 5px;
+   background-color: gray;
+   margin-left: 10%;
+}
+
+.property_header {
+  font-size: 1.5rem;
+  padding: 10px;
+}
