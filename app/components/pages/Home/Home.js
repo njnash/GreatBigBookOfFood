@@ -55,7 +55,7 @@ class Home extends React.Component {
               filterProps={filterProps}
             />
           </div>
-          <div>
+          <div className='recipe'>
             This is where the recipe goes
           </div>
         </div>

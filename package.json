@@ -3,12 +3,13 @@
   "version": "1.4.1",
   "description": "A boilerplate for React-Babel-Webpack project",
   "main": "app/main.jsx",
+  "homepage": "https://njnash.github.io/GreatBigBookOfFood/",
   "scripts": {
+    "deploy" : "npm run build&&gh-pages -d build",
     "lint": "eslint --cache --ignore-path .gitignore --ext .jsx,.js --format=node_modules/eslint-formatter-pretty .",
     "test": "npm run lint",
     "build": "webpack",
     "start": "webpack-dev-server --devtool eval --progress --hot --content-base app",
-    "deploy": "NODE_ENV=production webpack --config webpack.production.config.js",
     "deploy-windows": "SET NODE_ENV=production & webpack --config webpack.production.config.js",
     "validate": "npm ls",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1"
@@ -38,6 +39,7 @@
     "eslint-plugin-jsx-a11y": "3.x",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-react": "latest",
+    "gh-pages": "^0.12.0",
     "husky": "^0.12.0",
     "open-browser-webpack-plugin": "0.0.3",
     "style-loader": "~0.13.1",
