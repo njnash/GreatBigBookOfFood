@@ -4,6 +4,23 @@ import { FilterBar } from '../../containers';
 import styles from './Home.css';
 
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      filterBarOpen: false
+    };
+  }
+
+  openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+
   render() {
     let filterProps = [
       {
@@ -15,31 +32,31 @@ class Home extends React.Component {
         options: ['four', 'five', 'six']
       },
       {
-        property: 'Key Ingredient',
+        property: 'Type of Food',
         options: ['four', 'five', 'six']
       },
       {
-        property: 'Key Ingredient',
+        property: 'Ethnicity/Origin',
         options: ['four', 'five', 'six']
       },
       {
-        property: 'Key Ingredient',
+        property: 'Themes/Holidays',
         options: ['four', 'five', 'six']
       },
       {
-        property: 'Key Ingredient',
+        property: 'Prep Method',
         options: ['four', 'five', 'six']
       },
       {
-        property: 'Key Ingredient',
+        property: 'Difficulty',
         options: ['four', 'five', 'six']
       },
       {
-        property: 'Key Ingredient',
+        property: 'Serving Temp',
         options: ['four', 'five', 'six']
       },
       {
-        property: 'Last',
+        property: 'Meals',
         options: ['four', 'five', 'six']
       }
     ];
@@ -50,10 +67,13 @@ class Home extends React.Component {
           header={'Audrey\'s Great Big Book of Food'}
         />
         <div className='content'>
-          <div className='filterbar'>
-            <FilterBar
-              filterProps={filterProps}
-            />
+          <FilterBar
+            filterProps={filterProps}
+          />
+          <div className='recipelist'>
+            List
+            Of
+            Things
           </div>
           <div className='recipe'>
             This is where the recipe goes

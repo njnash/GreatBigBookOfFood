@@ -4,8 +4,10 @@ import styles from './Header.css';
 class Header extends React.Component {
   render() {
     return (
-      <div className='header'>
-        {this.props.header}
+      <div>
+        <div className='header'>
+          {this.props.header}
+        </div>
       </div>
     );
   }
